@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+
+    <h2>{{ prediction }}</h2>
+
+    <img src="{{ img_path }}" width="300">
+
+    <br><br>
+    <a href="/">Try Another Image</a>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #764ba2, #667eea);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+            text-align: center;
+            width: 450px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #667eea;
+            margin: 20px 0;
+        }
+
+        img {
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            background: #5563c1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>✅ Prediction Result</h1>
+
+        <h2>{{ prediction }}</h2>
+
+        <img src="{{ img_path }}" width="250">
+
+        <br>
+        <a href="/">🔁 Try Another Image</a>
+    </div>
+
+</body>
+</html>
